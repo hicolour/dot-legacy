@@ -3,20 +3,10 @@ com.github.hicolour.dotfiles
 
 dotfiles
 
-Some config files for...
+Some config files#!/bin/sh
 ========================
 - bash
 - vim
 
 - git
 
-Bash extensions:
--------------
-- 
-
-Vim extensions:
--------------
-- 
-
-Random installation tips:
--------------------------
