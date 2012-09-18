@@ -33,7 +33,7 @@ gconftool-2 \
 
 gconftool-2 \
          --set "/apps/gnome-terminal/profiles/Default/foreground_color" \
-            --type string "#606060"
+            --type string "#888888"
 
 
 #gconftool-2 -s -t string /apps/gnome-terminal/profiles/$PROFILE/background_color #606060

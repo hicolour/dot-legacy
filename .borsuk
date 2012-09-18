@@ -5,6 +5,9 @@ echo "updating ubuntu"
 sudo apt-get -qq update
 sudo apt-get -qq upgrade
 
+# vim
+echo "installing vim"
+sudo apt-get install vim
 # git
 echo "installing git"
 sudo apt-get -qq install git
