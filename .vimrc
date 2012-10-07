@@ -97,7 +97,7 @@ nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
 
 set background=dark
-:colorscheme ir_black
+":colorscheme ir_black
 set t_Co=256
 set guifont=Menlo:h18
 set lines=35 columns=120
