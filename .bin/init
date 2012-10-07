@@ -2,15 +2,17 @@
 
 # install subplugins
 echo "submodules initialization"
-cd ~/workspace/com.github.hicolour.dot/
+WORKSPACE=~/workspace
+
+cd ${WORKSPACE}/dot/
 git submodule init
 git submodule update
 
 
 # vim
 # quick fix for color 
-# mkdir ~/workspace/com.github.hicolour.dot/.vim/colors
-cp ~/workspace/com.github.hicolour.dot/.vim/bundle/colors/ir_black.vim ~/workspace/com.github.hicolour.dot/.vim/colors/ir_black.vim
+# mkdir ${WORKSPACE}/dot/.vim/colors
+cp ${WORKSPACE}/dot/.vim/bundle/colors/ir_black.vim ${WORKSPACE}/dot/.vim/colors/ir_black.vim
 
 # terminal
 #
@@ -46,7 +48,7 @@ gconftool-2 -s -t bool /apps/gnome-terminal/profiles/$PROFILE/use_theme_colors f
 
 # dot
 echo "linking dots.."
-cd ~/workspace/com.github.hicolour.dot
+cd ${WORKSPACE}/dot
 DTF=`date +%Y-%m-%d_%H-%M-%S`
 DIR=/tmp/.olddot-${DTF}
 
@@ -60,7 +62,7 @@ for f in .*;
     else 
       echo " processing $f dot";
       mv ~/$f ${DIR}
-      ln -s ~/workspace/com.github.hicolour.dot/$f ~/$f
+      ln -s ${WORKSPACE}/dot/$f ~/$f
     fi
 done
 
