@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# update apt-get
+echo "updating ubuntu"
+sudo apt-get -qq update
+sudo apt-get -qq upgrade
+
+# vim
+echo "installing vim"
+sudo apt-get install vim
+# git
+echo "installing git"
+sudo apt-get -qq install git
+
+# git bash-completion
+sudo apt-get install git-core bash-completion
+
+# emacs
+echo "installing emacs"
+sudo apt-get -qq install emacs emacs-goodies-el texinfo
+
+
+# R
+echo "installing R"
+sudo apt-get -qq install r-base ess
+
+# byobu
+# screen app
+sudo apt-get install byobu
+
+
