@@ -12,6 +12,10 @@ sudo apt-get install vim
 echo "installing git"
 sudo apt-get -qq install git
 
+# scala
+echo "installing scala"
+sudo apt-get -qq install scala
+
 # git bash-completion
 sudo apt-get install git-core bash-completion
 
